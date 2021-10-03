@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L REVERBSym:RPiZeroW J?
+L REVERBSym:RPiZeroW J1
 U 1 1 615AB4AD
 P 6900 3900
-F 0 "J?" H 6900 4075 50  0000 C CNN
-F 1 "RPiZeroW" H 6900 3984 50  0000 C CNN
+F 0 "J1" H 6900 1735 50  0000 C CNN
+F 1 "RPiZeroW" H 6900 1826 50  0000 C CNN
 F 2 "" H 6900 3850 50  0001 C CNN
 F 3 "" H 6900 3850 50  0001 C CNN
 	1    6900 3900
@@ -325,4 +325,174 @@ Wire Notes Line
 	4300 3850 4300 750 
 Wire Notes Line
 	4300 750  850  750 
+Text Label 7400 3650 0    50   ~ 0
+EPSSCL
+Text Label 7400 3750 0    50   ~ 0
+EPSSDA
+Wire Wire Line
+	6400 3750 6400 3800
+$Comp
+L power:+5V #PWR?
+U 1 1 615F78E4
+P 6300 3800
+F 0 "#PWR?" H 6300 3650 50  0001 C CNN
+F 1 "+5V" H 6315 3973 50  0000 C CNN
+F 2 "" H 6300 3800 50  0001 C CNN
+F 3 "" H 6300 3800 50  0001 C CNN
+	1    6300 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3800 6400 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6400 3850
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 615FC76F
+P 8450 750
+F 0 "H1" H 8550 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8550 708 50  0000 L CNN
+F 2 "" H 8450 750 50  0001 C CNN
+F 3 "~" H 8450 750 50  0001 C CNN
+	1    8450 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 615FD785
+P 8450 1200
+F 0 "H3" H 8550 1249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8550 1158 50  0000 L CNN
+F 2 "" H 8450 1200 50  0001 C CNN
+F 3 "~" H 8450 1200 50  0001 C CNN
+	1    8450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 615FDFBF
+P 9550 750
+F 0 "H2" H 9650 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9650 708 50  0000 L CNN
+F 2 "" H 9550 750 50  0001 C CNN
+F 3 "~" H 9550 750 50  0001 C CNN
+	1    9550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 615FEAC9
+P 9550 1200
+F 0 "H4" H 9650 1249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9650 1158 50  0000 L CNN
+F 2 "" H 9550 1200 50  0001 C CNN
+F 3 "~" H 9550 1200 50  0001 C CNN
+	1    9550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6160138A
+P 9550 1300
+F 0 "#PWR?" H 9550 1050 50  0001 C CNN
+F 1 "GND" H 9555 1127 50  0000 C CNN
+F 2 "" H 9550 1300 50  0001 C CNN
+F 3 "" H 9550 1300 50  0001 C CNN
+	1    9550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61602AD3
+P 8450 1300
+F 0 "#PWR?" H 8450 1050 50  0001 C CNN
+F 1 "GND" H 8455 1127 50  0000 C CNN
+F 2 "" H 8450 1300 50  0001 C CNN
+F 3 "" H 8450 1300 50  0001 C CNN
+	1    8450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61602F50
+P 8450 850
+F 0 "#PWR?" H 8450 600 50  0001 C CNN
+F 1 "GND" H 8455 677 50  0000 C CNN
+F 2 "" H 8450 850 50  0001 C CNN
+F 3 "" H 8450 850 50  0001 C CNN
+	1    8450 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6160353D
+P 9550 850
+F 0 "#PWR?" H 9550 600 50  0001 C CNN
+F 1 "GND" H 9555 677 50  0000 C CNN
+F 2 "" H 9550 850 50  0001 C CNN
+F 3 "" H 9550 850 50  0001 C CNN
+	1    9550 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3650 5900 3650
+Wire Wire Line
+	5900 3650 5900 4000
+Wire Wire Line
+	6400 3250 5900 3250
+Wire Wire Line
+	5900 3250 5900 3650
+Connection ~ 5900 3650
+Wire Wire Line
+	6400 2950 5900 2950
+Wire Wire Line
+	5900 2950 5900 3250
+Connection ~ 5900 3250
+Wire Wire Line
+	6400 2450 5900 2450
+Wire Wire Line
+	5900 2450 5900 2950
+Connection ~ 5900 2950
+Wire Wire Line
+	6400 2250 5900 2250
+Wire Wire Line
+	5900 2250 5900 2450
+Connection ~ 5900 2450
+Wire Wire Line
+	7400 1950 7950 1950
+Wire Wire Line
+	7950 1950 7950 2650
+Wire Wire Line
+	7400 3450 7950 3450
+Connection ~ 7950 3450
+Wire Wire Line
+	7950 3450 7950 4000
+Wire Wire Line
+	7400 2650 7950 2650
+Connection ~ 7950 2650
+Wire Wire Line
+	7950 2650 7950 3450
+$Comp
+L power:GND #PWR?
+U 1 1 61608D37
+P 5900 4000
+F 0 "#PWR?" H 5900 3750 50  0001 C CNN
+F 1 "GND" H 5905 3827 50  0000 C CNN
+F 2 "" H 5900 4000 50  0001 C CNN
+F 3 "" H 5900 4000 50  0001 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6160A077
+P 7950 4000
+F 0 "#PWR?" H 7950 3750 50  0001 C CNN
+F 1 "GND" H 7955 3827 50  0000 C CNN
+F 2 "" H 7950 4000 50  0001 C CNN
+F 3 "" H 7950 4000 50  0001 C CNN
+	1    7950 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
