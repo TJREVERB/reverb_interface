@@ -1,4 +1,328 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "TJ REVERB Interface Board"
+Date "2021-10-03"
+Rev "8.0"
+Comp "TJ Nanosat Club"
+Comment1 "Redesign from previous Eagle designs"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L REVERBSym:RPiZeroW J?
+U 1 1 615AB4AD
+P 6900 3900
+F 0 "J?" H 6900 4075 50  0000 C CNN
+F 1 "RPiZeroW" H 6900 3984 50  0000 C CNN
+F 2 "" H 6900 3850 50  0001 C CNN
+F 3 "" H 6900 3850 50  0001 C CNN
+	1    6900 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x26_Odd_Even H2
+U 1 1 615B1A2A
+P 2900 1700
+F 0 "H2" V 2996 2979 50  0000 L CNN
+F 1 "EPS Stack Header 1" V 2905 2979 50  0000 L CNN
+F 2 "" H 2900 1700 50  0001 C CNN
+F 3 "~" H 2900 1700 50  0001 C CNN
+	1    2900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x26_Odd_Even H1
+U 1 1 615B91C4
+P 2900 3350
+F 0 "H1" V 2996 4629 50  0000 L CNN
+F 1 "EPS Stack Header 2" V 2905 4629 50  0000 L CNN
+F 2 "" H 2900 3350 50  0001 C CNN
+F 3 "~" H 2900 3350 50  0001 C CNN
+	1    2900 3350
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4200 1400
+NoConn ~ 4100 1400
+NoConn ~ 4100 1900
+NoConn ~ 4200 1900
+NoConn ~ 4200 3050
+NoConn ~ 4100 3050
+NoConn ~ 4100 3550
+NoConn ~ 4200 3550
+NoConn ~ 4000 3550
+NoConn ~ 3900 3550
+NoConn ~ 4000 3050
+NoConn ~ 3900 3050
+NoConn ~ 1700 1400
+NoConn ~ 1800 1400
+NoConn ~ 1900 1400
+NoConn ~ 1700 1900
+NoConn ~ 1800 1900
+NoConn ~ 1900 1900
+NoConn ~ 2000 1900
+Text Label 2000 1400 1    50   ~ 0
+SW1
+Text Label 2100 1400 1    50   ~ 0
+SW2
+Text Label 2200 1400 1    50   ~ 0
+SW4
+$Comp
+L power:GND #PWR?
+U 1 1 615BEB2D
+P 3150 1050
+F 0 "#PWR?" H 3150 800 50  0001 C CNN
+F 1 "GND" H 3155 877 50  0000 C CNN
+F 2 "" H 3150 1050 50  0001 C CNN
+F 3 "" H 3150 1050 50  0001 C CNN
+	1    3150 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 1400 3100 1300
+Wire Wire Line
+	3200 1400 3200 1300
+Text Label 2400 1400 1    50   ~ 0
+SW7
+Text Label 2500 1400 1    50   ~ 0
+SW8
+Text Label 2600 1400 1    50   ~ 0
+SW10
+$Comp
+L power:+12V #PWR?
+U 1 1 615C1105
+P 2800 1300
+F 0 "#PWR?" H 2800 1150 50  0001 C CNN
+F 1 "+12V" H 2815 1473 50  0000 C CNN
+F 2 "" H 2800 1300 50  0001 C CNN
+F 3 "" H 2800 1300 50  0001 C CNN
+	1    2800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1300 3150 1300
+Wire Wire Line
+	2300 1400 2300 1050
+Wire Wire Line
+	2300 1050 2700 1050
+Wire Wire Line
+	2700 1400 2700 1050
+Connection ~ 2700 1050
+Wire Wire Line
+	2700 1050 3150 1050
+Wire Wire Line
+	3150 1300 3150 1050
+Connection ~ 3150 1300
+Wire Wire Line
+	3150 1300 3200 1300
+Connection ~ 3150 1050
+Wire Wire Line
+	4000 1400 4000 1050
+Wire Wire Line
+	4000 1050 3150 1050
+$Comp
+L power:+5V #PWR?
+U 1 1 615C45EE
+P 2900 1400
+F 0 "#PWR?" H 2900 1250 50  0001 C CNN
+F 1 "+5V" H 2915 1573 50  0000 C CNN
+F 2 "" H 2900 1400 50  0001 C CNN
+F 3 "" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1400 2800 1300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615C55E7
+P 3000 1300
+F 0 "#PWR?" H 3000 1150 50  0001 C CNN
+F 1 "+3.3V" H 3015 1473 50  0000 C CNN
+F 2 "" H 3000 1300 50  0001 C CNN
+F 3 "" H 3000 1300 50  0001 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1400 3000 1300
+NoConn ~ 3300 1400
+NoConn ~ 3500 1400
+NoConn ~ 3600 1400
+Text Label 3400 1400 1    50   ~ 0
+PCM_IN
+Text Label 3700 1400 1    50   ~ 0
+BCR_OUT
+Text Label 3800 1400 1    50   ~ 0
+BCR_OUT
+$Comp
+L power:VBUS #PWR?
+U 1 1 615C7A52
+P 3900 1400
+F 0 "#PWR?" H 3900 1250 50  0001 C CNN
+F 1 "VBUS" H 3915 1573 50  0000 C CNN
+F 2 "" H 3900 1400 50  0001 C CNN
+F 3 "" H 3900 1400 50  0001 C CNN
+	1    3900 1400
+	1    0    0    -1  
+$EndComp
+Text Label 2200 1900 3    50   ~ 0
+SW3
+Text Label 2300 1900 3    50   ~ 0
+SW5
+Text Label 2400 1900 3    50   ~ 0
+SW6
+Text Label 2600 1900 3    50   ~ 0
+SW9
+Text Label 3400 1900 3    50   ~ 0
+PCM_IN
+Text Label 3700 1900 3    50   ~ 0
+BCR_OUT
+Text Label 3800 1900 3    50   ~ 0
+BCR_OUT
+$Comp
+L power:VBUS #PWR?
+U 1 1 615CA199
+P 3900 1900
+F 0 "#PWR?" H 3900 1750 50  0001 C CNN
+F 1 "VBUS" H 3915 2073 50  0000 C CNN
+F 2 "" H 3900 1900 50  0001 C CNN
+F 3 "" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615CAD38
+P 3000 2000
+F 0 "#PWR?" H 3000 1850 50  0001 C CNN
+F 1 "+3.3V" H 3015 2173 50  0000 C CNN
+F 2 "" H 3000 2000 50  0001 C CNN
+F 3 "" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 615CC1B0
+P 2800 2000
+F 0 "#PWR?" H 2800 1850 50  0001 C CNN
+F 1 "+12V" H 2815 2173 50  0000 C CNN
+F 2 "" H 2800 2000 50  0001 C CNN
+F 3 "" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615CC6D6
+P 2900 1900
+F 0 "#PWR?" H 2900 1750 50  0001 C CNN
+F 1 "+5V" H 2915 2073 50  0000 C CNN
+F 2 "" H 2900 1900 50  0001 C CNN
+F 3 "" H 2900 1900 50  0001 C CNN
+	1    2900 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2000 3000 1900
+Wire Wire Line
+	2800 1900 2800 2000
+NoConn ~ 3500 1900
+NoConn ~ 3600 1900
+NoConn ~ 3300 1900
+NoConn ~ 3200 1900
+$Comp
+L power:GND #PWR?
+U 1 1 615CF7EC
+P 3100 2400
+F 0 "#PWR?" H 3100 2150 50  0001 C CNN
+F 1 "GND" H 3105 2227 50  0000 C CNN
+F 2 "" H 3100 2400 50  0001 C CNN
+F 3 "" H 3100 2400 50  0001 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2400 2500 2400
+Wire Wire Line
+	2100 1900 2100 2400
+Wire Wire Line
+	4000 1900 4000 2400
+Wire Wire Line
+	4000 2400 3100 2400
+Connection ~ 3100 2400
+Wire Wire Line
+	3100 1900 3100 2400
+Wire Wire Line
+	2700 1900 2700 2400
+Connection ~ 2700 2400
+Wire Wire Line
+	2700 2400 3100 2400
+Wire Wire Line
+	2500 1900 2500 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2400 2700 2400
+Text Label 3800 3550 3    50   ~ 0
+EPSSCL
+Text Label 3700 3550 3    50   ~ 0
+EPSSDA
+NoConn ~ 3600 3550
+NoConn ~ 3500 3550
+NoConn ~ 3400 3550
+NoConn ~ 3300 3550
+NoConn ~ 3200 3550
+NoConn ~ 3100 3550
+NoConn ~ 3000 3550
+NoConn ~ 2900 3550
+NoConn ~ 2800 3550
+NoConn ~ 2700 3550
+NoConn ~ 2600 3550
+NoConn ~ 2500 3550
+NoConn ~ 2400 3550
+NoConn ~ 2300 3550
+NoConn ~ 2200 3550
+NoConn ~ 2100 3550
+NoConn ~ 2000 3550
+NoConn ~ 1900 3550
+NoConn ~ 1800 3550
+NoConn ~ 1700 3550
+NoConn ~ 3800 3050
+NoConn ~ 3700 3050
+NoConn ~ 3600 3050
+NoConn ~ 3500 3050
+NoConn ~ 3400 3050
+NoConn ~ 3300 3050
+Text Label 3200 3050 1    50   ~ 0
+5VUSBCHG
+NoConn ~ 3100 3050
+NoConn ~ 3000 3050
+NoConn ~ 2900 3050
+NoConn ~ 2800 3050
+NoConn ~ 2700 3050
+NoConn ~ 2600 3050
+NoConn ~ 2500 3050
+NoConn ~ 2400 3050
+NoConn ~ 2300 3050
+NoConn ~ 2200 3050
+NoConn ~ 2100 3050
+NoConn ~ 2000 3050
+NoConn ~ 1900 3050
+NoConn ~ 1800 3050
+NoConn ~ 1700 3050
+Text Notes 850  850  0    50   ~ 0
+EPS Connections
+Wire Notes Line
+	850  750  850  3850
+Wire Notes Line
+	850  3850 4300 3850
+Wire Notes Line
+	4300 3850 4300 750 
+Wire Notes Line
+	4300 750  850  750 
 $EndSCHEMATC
