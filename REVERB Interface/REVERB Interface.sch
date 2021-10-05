@@ -495,4 +495,74 @@ F 3 "" H 7950 4000 50  0001 C CNN
 	1    7950 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J2
+U 1 1 615BBA54
+P 3850 5650
+F 0 "J2" H 3900 5025 50  0000 C CNN
+F 1 "Iridium" H 3900 5116 50  0000 C CNN
+F 2 "" H 3850 5650 50  0001 C CNN
+F 3 "~" H 3850 5650 50  0001 C CNN
+	1    3850 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J3
+U 1 1 615C1024
+P 2300 5450
+F 0 "J3" H 2350 6067 50  0000 C CNN
+F 1 "APRS" H 2350 5976 50  0000 C CNN
+F 2 "" H 2300 5450 50  0001 C CNN
+F 3 "~" H 2300 5450 50  0001 C CNN
+	1    2300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:AT25xxx U1
+U 1 1 615C353F
+P 6200 5650
+F 0 "U1" H 6200 6131 50  0000 C CNN
+F 1 "AT25P" H 6200 6040 50  0000 C CNN
+F 2 "" H 6200 5650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 6200 5650 50  0001 C CNN
+	1    6200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J4
+U 1 1 615C48DD
+P 950 5400
+F 0 "J4" H 1058 5981 50  0000 C CNN
+F 1 "Antenna" H 1058 5890 50  0000 C CNN
+F 2 "" H 950 5400 50  0001 C CNN
+F 3 "~" H 950 5400 50  0001 C CNN
+	1    950  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 615C5D8E
+P 9000 3100
+F 0 "J5" H 9108 3281 50  0000 C CNN
+F 1 "USB" H 9108 3190 50  0000 C CNN
+F 2 "" H 9000 3100 50  0001 C CNN
+F 3 "~" H 9000 3100 50  0001 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+Text Label 9200 3100 0    50   ~ 0
+D+
+Text Label 9200 3200 0    50   ~ 0
+D-
+$Comp
+L Interface_UART:MAX3232 U2
+U 1 1 615C8750
+P 8950 5950
+F 0 "U2" H 8950 7331 50  0000 C CNN
+F 1 "MAX3232" H 8950 7240 50  0000 C CNN
+F 2 "" H 9000 4900 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 8950 6050 50  0001 C CNN
+	1    8950 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
