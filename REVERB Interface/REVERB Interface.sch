@@ -647,13 +647,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x06_Male J7
 U 1 1 615DBA1F
-P 4800 6400
-F 0 "J7" V 4862 6644 50  0000 L CNN
-F 1 "USBSER3" V 4953 6644 50  0000 L CNN
-F 2 "" H 4800 6400 50  0001 C CNN
-F 3 "~" H 4800 6400 50  0001 C CNN
-	1    4800 6400
-	0    1    1    0   
+P 4650 4700
+F 0 "J7" V 4712 4944 50  0000 L CNN
+F 1 "USBSER3" V 4803 4944 50  0000 L CNN
+F 2 "" H 4650 4700 50  0001 C CNN
+F 3 "~" H 4650 4700 50  0001 C CNN
+	1    4650 4700
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C1
@@ -756,4 +756,98 @@ F 3 "https://www.nxp.com/docs/en/data-sheet/SC16IS752_SC16IS762.pdf" H 10950 135
 	1    10950 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 615E4914
+P 4750 6150
+F 0 "J8" H 4858 6331 50  0000 C CNN
+F 1 "USB" H 4858 6240 50  0000 C CNN
+F 2 "" H 4750 6150 50  0001 C CNN
+F 3 "~" H 4750 6150 50  0001 C CNN
+	1    4750 6150
+	0    1    1    0   
+$EndComp
+Text Label 4750 6350 3    50   ~ 0
+D+
+Text Label 4650 6350 3    50   ~ 0
+D-
+Text Label 5100 6150 0    50   ~ 0
+SW7
+$Comp
+L power:GND #PWR?
+U 1 1 615E7235
+P 5100 5850
+F 0 "#PWR?" H 5100 5600 50  0001 C CNN
+F 1 "GND" H 5105 5677 50  0000 C CNN
+F 2 "" H 5100 5850 50  0001 C CNN
+F 3 "" H 5100 5850 50  0001 C CNN
+	1    5100 5850
+	0    -1   -1   0   
+$EndComp
+Text Label 5100 5750 0    50   ~ 0
+APRSTX
+Text Label 5100 5650 0    50   ~ 0
+APRSRX
+Text Label 1150 5000 0    50   ~ 0
+SW6
+Text Label 1150 5500 0    50   ~ 0
+SW6
+Text Label 1150 5650 0    50   ~ 0
+EPSSCL
+Text Label 1300 5300 0    50   ~ 0
+EPSSDA
+Wire Wire Line
+	1150 5700 1150 5600
+Wire Wire Line
+	1150 5300 1300 5300
+Wire Wire Line
+	1300 5300 1300 5100
+Wire Wire Line
+	1300 5100 1150 5100
+Wire Wire Line
+	1150 5200 850  5200
+Wire Wire Line
+	850  5200 850  5400
+Wire Wire Line
+	850  5400 1150 5400
+Wire Wire Line
+	1150 5800 850  5800
+Wire Wire Line
+	850  5800 850  5400
+Connection ~ 850  5400
+Wire Wire Line
+	850  5800 850  5900
+Connection ~ 850  5800
+$Comp
+L power:GND #PWR?
+U 1 1 615ED1B0
+P 850 5900
+F 0 "#PWR?" H 850 5650 50  0001 C CNN
+F 1 "GND" H 855 5727 50  0000 C CNN
+F 2 "" H 850 5900 50  0001 C CNN
+F 3 "" H 850 5900 50  0001 C CNN
+	1    850  5900
+	1    0    0    -1  
+$EndComp
+Text Label 2600 5850 0    50   ~ 0
+SW4
+Wire Wire Line
+	2600 5750 2850 5750
+Wire Wire Line
+	2850 5750 2850 5850
+$Comp
+L power:GND #PWR?
+U 1 1 615F0738
+P 2850 5850
+F 0 "#PWR?" H 2850 5600 50  0001 C CNN
+F 1 "GND" H 2855 5677 50  0000 C CNN
+F 2 "" H 2850 5850 50  0001 C CNN
+F 3 "" H 2850 5850 50  0001 C CNN
+	1    2850 5850
+	1    0    0    -1  
+$EndComp
+Text Label 2600 5250 0    50   ~ 0
+APRSTX
+Text Label 2600 5150 0    50   ~ 0
+APRSRX
 $EndSCHEMATC
