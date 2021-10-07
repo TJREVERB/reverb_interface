@@ -724,17 +724,6 @@ F 3 "" H 10250 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_UART:SC16IS752IPW U3
-U 1 1 615DC7E1
-P 10950 2750
-F 0 "U3" H 10950 3931 50  0000 C CNN
-F 1 "SC16IS752IPW" H 10950 3840 50  0000 C CNN
-F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 10950 1200 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/data-sheet/SC16IS752_SC16IS762.pdf" H 10950 1350 50  0001 C CNN
-	1    10950 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J9
 U 1 1 615E4914
 P 4750 6150
