@@ -496,17 +496,6 @@ F 3 "" H 7950 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J2
-U 1 1 615BBA54
-P 3600 5650
-F 0 "J2" H 3650 5025 50  0000 C CNN
-F 1 "Iridium" H 3650 5116 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 3600 5650 50  0001 C CNN
-F 3 "~" H 3600 5650 50  0001 C CNN
-	1    3600 5650
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x10_Odd_Even J3
 U 1 1 615C1024
 P 2300 5450
@@ -860,4 +849,15 @@ Text Label 3800 5450 0    50   ~ 0
 T1OUT
 Text Label 3800 5350 0    50   ~ 0
 R1IN
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J2
+U 1 1 615BBA54
+P 3600 5650
+F 0 "J2" H 3650 5025 50  0000 C CNN
+F 1 "Iridium" H 3650 5116 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 3600 5650 50  0001 C CNN
+F 3 "~" H 3600 5650 50  0001 C CNN
+	1    3600 5650
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
