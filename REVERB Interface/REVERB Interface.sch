@@ -30,7 +30,7 @@ U 1 1 615B1A2A
 P 2900 1700
 F 0 "H2" V 2996 2979 50  0000 L CNN
 F 1 "EPS Stack Header 1" V 2905 2979 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x26_P2.54mm_Vertical" H 2900 1700 50  0001 C CNN
+F 2 "REVERB Interface:PinSocket_2x26_P2.54mm_Vertical" H 2900 1700 50  0001 C CNN
 F 3 "~" H 2900 1700 50  0001 C CNN
 	1    2900 1700
 	0    -1   -1   0   
@@ -41,7 +41,7 @@ U 1 1 615B91C4
 P 2900 3350
 F 0 "H1" V 2996 4629 50  0000 L CNN
 F 1 "EPS Stack Header 2" V 2905 4629 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x26_P2.54mm_Vertical" H 2900 3350 50  0001 C CNN
+F 2 "REVERB Interface:PinSocket_2x26_P2.54mm_Vertical" H 2900 3350 50  0001 C CNN
 F 3 "~" H 2900 3350 50  0001 C CNN
 	1    2900 3350
 	0    -1   -1   0   
@@ -518,23 +518,12 @@ F 3 "~" H 2300 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Memory_EEPROM:AT25xxx U1
-U 1 1 615C353F
-P 6200 5650
-F 0 "U1" H 6200 6131 50  0000 C CNN
-F 1 "AT25P" H 6200 6040 50  0000 C CNN
-F 2 "" H 6200 5650 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 6200 5650 50  0001 C CNN
-	1    6200 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x09_Male J4
 U 1 1 615C48DD
 P 950 5400
 F 0 "J4" H 1058 5981 50  0000 C CNN
 F 1 "Antenna" H 1058 5890 50  0000 C CNN
-F 2 "" H 950 5400 50  0001 C CNN
+F 2 "REVERB Interface:1.25mmPitchHeader" H 950 5400 50  0001 C CNN
 F 3 "~" H 950 5400 50  0001 C CNN
 	1    950  5400
 	1    0    0    -1  
@@ -560,7 +549,7 @@ U 1 1 615C8750
 P 8800 5200
 F 0 "U2" H 8800 6581 50  0000 C CNN
 F 1 "MAX3232" H 8800 6490 50  0000 C CNN
-F 2 "" H 8850 4150 50  0001 L CNN
+F 2 "REVERB Interface:Texas_Instruments-MAX3232ID" H 8850 4150 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 8800 5300 50  0001 C CNN
 	1    8800 5200
 	1    0    0    -1  
