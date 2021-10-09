@@ -498,12 +498,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x09_Male J4
 U 1 1 615C48DD
-P 7650 4650
-F 0 "J4" H 7758 5231 50  0000 C CNN
-F 1 "Antenna" H 7758 5140 50  0000 C CNN
-F 2 "REVERB Interface:1.25mmPitchHeader" H 7650 4650 50  0001 C CNN
-F 3 "~" H 7650 4650 50  0001 C CNN
-	1    7650 4650
+P 7200 4650
+F 0 "J4" H 7308 5231 50  0000 C CNN
+F 1 "Antenna" H 7308 5140 50  0000 C CNN
+F 2 "REVERB Interface:1.25mmPitchHeader" H 7200 4650 50  0001 C CNN
+F 3 "~" H 7200 4650 50  0001 C CNN
+	1    7200 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -533,28 +533,6 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf" H 5550 54
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x10_Male J5
-U 1 1 615C6FC5
-P 6900 6150
-F 0 "J5" H 7008 6731 50  0000 C CNN
-F 1 "MAX3232BOB" H 7008 6640 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 6900 6150 50  0001 C CNN
-F 3 "~" H 6900 6150 50  0001 C CNN
-	1    6900 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 615CEC17
-P 7100 6250
-F 0 "#PWR0118" H 7100 6000 50  0001 C CNN
-F 1 "GND" H 7105 6077 50  0000 C CNN
-F 2 "" H 7100 6250 50  0001 C CNN
-F 3 "" H 7100 6250 50  0001 C CNN
-	1    7100 6250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0119
 U 1 1 615D0A22
 P 5550 6550
@@ -567,14 +545,6 @@ F 3 "" H 5550 6550 50  0001 C CNN
 $EndComp
 Text Label 5550 4150 2    50   ~ 0
 SW8
-Text Label 7100 6350 0    50   ~ 0
-T1IN
-Text Label 7100 6550 0    50   ~ 0
-R1OUT
-Text Label 7100 5950 0    50   ~ 0
-R1IN
-Text Label 7100 5750 0    50   ~ 0
-T1OUT
 Text Label 6650 5450 0    50   ~ 0
 T1OUT
 Text Label 6650 5850 0    50   ~ 0
@@ -583,9 +553,9 @@ Text Label 4050 5450 2    50   ~ 0
 T1IN
 Text Label 4050 5850 2    50   ~ 0
 R1OUT
-Text Label 5100 2450 2    50   ~ 0
+Text Label 7300 2800 2    50   ~ 0
 R1OUT
-Text Label 5100 2550 2    50   ~ 0
+Text Label 9350 2800 2    50   ~ 0
 T1IN
 $Comp
 L Device:C C1
@@ -695,152 +665,152 @@ F 3 "" H 2950 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1550 4800 2    50   ~ 0
-APRSTX
+USBUARTTX
 Text Label 1550 4700 2    50   ~ 0
-APRSRX
-Text Label 7850 4250 0    50   ~ 0
+USBUARTRX
+Text Label 7400 4250 0    50   ~ 0
 SW6
-Text Label 7850 4750 0    50   ~ 0
+Text Label 7400 4750 0    50   ~ 0
 SW6
-Text Label 7850 4900 0    50   ~ 0
+Text Label 7400 4900 0    50   ~ 0
 EPSSCL
-Text Label 8000 4550 0    50   ~ 0
+Text Label 7550 4550 0    50   ~ 0
 EPSSDA
 Wire Wire Line
-	7850 4950 7850 4850
+	7400 4950 7400 4850
 Wire Wire Line
-	7850 4550 8000 4550
+	7400 4550 7550 4550
 Wire Wire Line
-	8000 4550 8000 4350
+	7550 4550 7550 4350
 Wire Wire Line
-	8000 4350 7850 4350
+	7550 4350 7400 4350
 Wire Wire Line
-	7850 4450 7550 4450
+	7400 4450 7100 4450
 Wire Wire Line
-	7550 4450 7550 4650
+	7100 4450 7100 4650
 Wire Wire Line
-	7550 4650 7850 4650
+	7100 4650 7400 4650
 Wire Wire Line
-	7850 5050 7550 5050
+	7400 5050 7100 5050
 Wire Wire Line
-	7550 5050 7550 4650
-Connection ~ 7550 4650
+	7100 5050 7100 4650
+Connection ~ 7100 4650
 Wire Wire Line
-	7550 5050 7550 5150
-Connection ~ 7550 5050
+	7100 5050 7100 5150
+Connection ~ 7100 5050
 $Comp
 L power:GND #PWR0124
 U 1 1 615ED1B0
-P 7550 5150
-F 0 "#PWR0124" H 7550 4900 50  0001 C CNN
-F 1 "GND" H 7555 4977 50  0000 C CNN
-F 2 "" H 7550 5150 50  0001 C CNN
-F 3 "" H 7550 5150 50  0001 C CNN
-	1    7550 5150
+P 7100 5150
+F 0 "#PWR0124" H 7100 4900 50  0001 C CNN
+F 1 "GND" H 7105 4977 50  0000 C CNN
+F 2 "" H 7100 5150 50  0001 C CNN
+F 3 "" H 7100 5150 50  0001 C CNN
+	1    7100 5150
 	1    0    0    -1  
 $EndComp
-Text Label 8900 5100 0    50   ~ 0
+Text Label 8450 5100 0    50   ~ 0
 SW4
 Wire Wire Line
-	8900 5000 9150 5000
+	8450 5000 8700 5000
 Wire Wire Line
-	9150 5000 9150 5100
+	8700 5000 8700 5100
 $Comp
 L power:GND #PWR0125
 U 1 1 615F0738
-P 9150 5100
-F 0 "#PWR0125" H 9150 4850 50  0001 C CNN
-F 1 "GND" H 9155 4927 50  0000 C CNN
-F 2 "" H 9150 5100 50  0001 C CNN
-F 3 "" H 9150 5100 50  0001 C CNN
-	1    9150 5100
+P 8700 5100
+F 0 "#PWR0125" H 8700 4850 50  0001 C CNN
+F 1 "GND" H 8705 4927 50  0000 C CNN
+F 2 "" H 8700 5100 50  0001 C CNN
+F 3 "" H 8700 5100 50  0001 C CNN
+	1    8700 5100
 	1    0    0    -1  
 $EndComp
-Text Label 8900 4500 0    50   ~ 0
+Text Label 8450 4500 0    50   ~ 0
 APRSTX
-Text Label 8900 4400 0    50   ~ 0
+Text Label 8450 4400 0    50   ~ 0
 APRSRX
-Text Label 9800 4900 0    50   ~ 0
+Text Label 9350 4900 0    50   ~ 0
 SW3
 $Comp
 L power:GND #PWR0126
 U 1 1 615E6308
-P 10050 4850
-F 0 "#PWR0126" H 10050 4600 50  0001 C CNN
-F 1 "GND" H 10055 4677 50  0000 C CNN
-F 2 "" H 10050 4850 50  0001 C CNN
-F 3 "" H 10050 4850 50  0001 C CNN
-	1    10050 4850
+P 9600 4850
+F 0 "#PWR0126" H 9600 4600 50  0001 C CNN
+F 1 "GND" H 9605 4677 50  0000 C CNN
+F 2 "" H 9600 4850 50  0001 C CNN
+F 3 "" H 9600 4850 50  0001 C CNN
+	1    9600 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 4800 10050 4800
+	9350 4800 9600 4800
 Wire Wire Line
-	10050 4800 10050 4850
-Text Label 9800 4500 0    50   ~ 0
+	9600 4800 9600 4850
+Text Label 9350 4500 0    50   ~ 0
 T1OUT
-Text Label 9800 4400 0    50   ~ 0
+Text Label 9350 4400 0    50   ~ 0
 R1IN
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 615BBA54
-P 9600 4700
-F 0 "J2" H 9650 4075 50  0000 C CNN
-F 1 "Iridium" H 9650 4166 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9600 4700 50  0001 C CNN
-F 3 "~" H 9600 4700 50  0001 C CNN
-	1    9600 4700
+P 9150 4700
+F 0 "J2" H 9200 4075 50  0000 C CNN
+F 1 "Iridium" H 9200 4166 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9150 4700 50  0001 C CNN
+F 3 "~" H 9150 4700 50  0001 C CNN
+	1    9150 4700
 	-1   0    0    1   
 $EndComp
-Text Notes 7500 4000 0    50   ~ 0
+Text Notes 7050 4000 0    50   ~ 0
 Connectors
 Wire Notes Line
-	7450 3900 7450 5400
+	7000 3900 7000 5400
 Wire Notes Line
-	7450 5400 10150 5400
+	7000 5400 9700 5400
 Wire Notes Line
-	10150 5400 10150 3900
+	9700 5400 9700 3900
 Wire Notes Line
-	10150 3900 7450 3900
-NoConn ~ 8900 5200
-NoConn ~ 8900 4900
-NoConn ~ 8900 4800
-NoConn ~ 8900 4700
-NoConn ~ 8900 4600
-NoConn ~ 8900 4300
-NoConn ~ 8400 4300
+	9700 3900 7000 3900
+NoConn ~ 8450 5200
+NoConn ~ 8450 4900
+NoConn ~ 8450 4800
+NoConn ~ 8450 4700
+NoConn ~ 8450 4600
+NoConn ~ 8450 4300
+NoConn ~ 7950 4300
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J3
 U 1 1 615C1024
-P 8600 4700
-F 0 "J3" H 8650 5317 50  0000 C CNN
-F 1 "APRS" H 8650 5226 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 8600 4700 50  0001 C CNN
-F 3 "~" H 8600 4700 50  0001 C CNN
-	1    8600 4700
+P 8150 4700
+F 0 "J3" H 8200 5317 50  0000 C CNN
+F 1 "APRS" H 8200 5226 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 8150 4700 50  0001 C CNN
+F 3 "~" H 8150 4700 50  0001 C CNN
+	1    8150 4700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8400 4400
-NoConn ~ 8400 4500
-NoConn ~ 8400 4600
-NoConn ~ 8400 4700
-NoConn ~ 8400 4800
-NoConn ~ 8400 4900
-NoConn ~ 8400 5000
-NoConn ~ 8400 5100
-NoConn ~ 8400 5200
-NoConn ~ 9300 4300
-NoConn ~ 9300 4400
-NoConn ~ 9300 4500
-NoConn ~ 9300 4600
-NoConn ~ 9300 4700
-NoConn ~ 9300 4800
-NoConn ~ 9300 4900
-NoConn ~ 9300 5000
-NoConn ~ 9800 4300
-NoConn ~ 9800 4600
-NoConn ~ 9800 4700
-NoConn ~ 9800 5000
+NoConn ~ 7950 4400
+NoConn ~ 7950 4500
+NoConn ~ 7950 4600
+NoConn ~ 7950 4700
+NoConn ~ 7950 4800
+NoConn ~ 7950 4900
+NoConn ~ 7950 5000
+NoConn ~ 7950 5100
+NoConn ~ 7950 5200
+NoConn ~ 8850 4300
+NoConn ~ 8850 4400
+NoConn ~ 8850 4500
+NoConn ~ 8850 4600
+NoConn ~ 8850 4700
+NoConn ~ 8850 4800
+NoConn ~ 8850 4900
+NoConn ~ 8850 5000
+NoConn ~ 9350 4300
+NoConn ~ 9350 4600
+NoConn ~ 9350 4700
+NoConn ~ 9350 5000
 Text Label 6100 1750 0    50   ~ 0
 SPISCK
 Text Label 6100 1850 0    50   ~ 0
@@ -1097,8 +1067,6 @@ Wire Wire Line
 	4150 6700 4450 6700
 Wire Wire Line
 	3900 6100 4450 6100
-Text Label 7100 6150 0    50   ~ 0
-SW8
 $Comp
 L Device:LED D5
 U 1 1 616CB109
@@ -1182,49 +1150,129 @@ UART TO RS232
 Wire Notes Line
 	3750 3900 3750 6950
 Wire Notes Line
-	3750 6950 7350 6950
-Wire Notes Line
-	7350 6950 7350 3900
-Wire Notes Line
-	7350 3900 3750 3900
+	6950 6950 6950 3900
 $Comp
 L REVERBSym:LSM9DS1BOB U1
 U 1 1 617E2B02
-P 8550 2850
-F 0 "U1" H 9028 2896 50  0000 L CNN
-F 1 "LSM9DS1BOB" H 9028 2805 50  0000 L CNN
-F 2 "REVERB Interface:LSM9DS1BOB" H 8550 2850 50  0001 C CNN
-F 3 "" H 8550 2850 50  0001 C CNN
-	1    8550 2850
+P 1350 7450
+F 0 "U1" H 1828 7496 50  0000 L CNN
+F 1 "LSM9DS1BOB" H 1828 7405 50  0000 L CNN
+F 2 "REVERB Interface:LSM9DS1BOB" H 1350 7450 50  0001 C CNN
+F 3 "" H 1350 7450 50  0001 C CNN
+	1    1350 7450
 	1    0    0    -1  
 $EndComp
-Text Label 8250 3250 3    50   ~ 0
+Text Label 1050 7850 3    50   ~ 0
 SW9
 Wire Wire Line
-	8350 3250 8350 3450
+	1150 7850 1150 8050
 $Comp
 L power:GND #PWR0129
 U 1 1 617E7DA1
-P 8350 3450
-F 0 "#PWR0129" H 8350 3200 50  0001 C CNN
-F 1 "GND" H 8355 3277 50  0000 C CNN
-F 2 "" H 8350 3450 50  0001 C CNN
-F 3 "" H 8350 3450 50  0001 C CNN
-	1    8350 3450
+P 1150 8050
+F 0 "#PWR0129" H 1150 7800 50  0001 C CNN
+F 1 "GND" H 1155 7877 50  0000 C CNN
+F 2 "" H 1150 8050 50  0001 C CNN
+F 3 "" H 1150 8050 50  0001 C CNN
+	1    1150 8050
 	1    0    0    -1  
 $EndComp
-Text Label 8450 3250 3    50   ~ 0
+Text Label 1250 7850 3    50   ~ 0
 EPSSCL
-Text Label 8550 3250 3    50   ~ 0
+Text Label 1350 7850 3    50   ~ 0
 EPSSDA
-Text Notes 8050 2400 0    50   ~ 0
+Text Notes 850  7000 0    50   ~ 0
 IMU
 Wire Notes Line
-	8050 2300 8050 3700
+	850  6900 850  8300
 Wire Notes Line
-	8050 3700 9550 3700
+	850  8300 2350 8300
 Wire Notes Line
-	9550 3700 9550 2300
+	2350 8300 2350 6900
 Wire Notes Line
-	9550 2300 8050 2300
+	2350 6900 850  6900
+$Comp
+L Jumper:SolderJumper_3_Open JP2
+U 1 1 6162F0DD
+P 9550 2800
+F 0 "JP2" H 9550 3005 50  0000 C CNN
+F 1 "HWTX" H 9550 2914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 9550 2800 50  0001 C CNN
+F 3 "~" H 9550 2800 50  0001 C CNN
+	1    9550 2800
+	1    0    0    -1  
+$EndComp
+Text Label 5100 2550 2    50   ~ 0
+HWTX
+Text Label 5100 2450 2    50   ~ 0
+HWRX
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 6163699D
+P 7500 2800
+F 0 "JP1" H 7500 3005 50  0000 C CNN
+F 1 "HWRX" H 7500 2914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 7500 2800 50  0001 C CNN
+F 3 "~" H 7500 2800 50  0001 C CNN
+	1    7500 2800
+	1    0    0    -1  
+$EndComp
+Text Label 7500 2950 3    50   ~ 0
+HWRX
+Text Label 9550 2950 3    50   ~ 0
+HWTX
+Text Label 9750 2800 0    50   ~ 0
+APRSTX
+Text Label 7700 2800 0    50   ~ 0
+APRSRX
+Text Label 10650 2950 3    50   ~ 0
+USBUARTTX
+Text Label 8550 2950 3    50   ~ 0
+USBUARTRX
+$Comp
+L Jumper:SolderJumper_3_Open JP3
+U 1 1 61663E50
+P 8550 2800
+F 0 "JP3" H 8550 3005 50  0000 C CNN
+F 1 "USBUARTRX" H 8550 2914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 8550 2800 50  0001 C CNN
+F 3 "~" H 8550 2800 50  0001 C CNN
+	1    8550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP4
+U 1 1 61667589
+P 10650 2800
+F 0 "JP4" H 10650 3005 50  0000 C CNN
+F 1 "USBUARTTX" H 10650 2914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 10650 2800 50  0001 C CNN
+F 3 "~" H 10650 2800 50  0001 C CNN
+	1    10650 2800
+	1    0    0    -1  
+$EndComp
+Text Label 10850 2800 0    50   ~ 0
+APRSTX
+Text Label 8750 2800 0    50   ~ 0
+APRSRX
+Text Label 8350 2800 2    50   ~ 0
+R1OUT
+Text Label 10450 2800 2    50   ~ 0
+T1IN
+Text Notes 7050 2550 0    50   ~ 0
+UART selection Jumpers
+Text Notes 7050 3800 0    50   ~ 0
+Option 1: Hardware APRS, two converters to Iridium: \nJP1 and JP2 bridge pins 2 and 3, JP3 and JP4 bridge pins 1 and 2\nOption 2: USB UART APRS, MAX3232 Iridium:\nJP1 and JP2 bridge pins 1 and 2, JP3 and JP4 bridge pins 2 and 3\nDO NOT BRIDGE THE SAME TWO PINS FOR BOTH PAIRS OF JUMPERS
+Wire Notes Line
+	7050 2450 7050 3850
+Wire Notes Line
+	7050 3850 11150 3850
+Wire Notes Line
+	11150 3850 11150 2450
+Wire Notes Line
+	11150 2450 7050 2450
+Wire Notes Line
+	6950 6950 3750 6950
+Wire Notes Line
+	3750 3900 6950 3900
 $EndSCHEMATC
