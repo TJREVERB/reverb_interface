@@ -1466,4 +1466,8 @@ Text Label 3250 5850 0    50   ~ 0
 CTS
 Text Label 3250 5750 0    50   ~ 0
 RTS
+Text Label 6100 2250 0    50   ~ 0
+CTS
+Text Label 6100 2150 0    50   ~ 0
+RTS
 $EndSCHEMATC
