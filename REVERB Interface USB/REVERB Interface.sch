@@ -1565,4 +1565,6 @@ Text Label 1250 6000 1    50   ~ 0
 SW10
 Text Label 1450 5200 0    50   ~ 0
 SW10
+Text Notes 500  7050 0    50   ~ 0
+Do not connect USB while the EPS is connected so that back voltage isn't sent to the EPS
 $EndSCHEMATC
