@@ -651,8 +651,6 @@ Text Label 3550 4500 0    50   ~ 0
 D+
 Text Label 3550 4600 0    50   ~ 0
 D-
-Text Label 2200 4000 0    50   ~ 0
-SW7STEP3V3
 $Comp
 L power:GND #PWR0123
 U 1 1 615E7235
@@ -848,8 +846,6 @@ F 3 "~" H 1450 6200 50  0001 C CNN
 	1    1450 6200
 	1    0    0    -1  
 $EndComp
-Text Label 1250 6000 1    50   ~ 0
-SW7
 $Comp
 L power:GND #PWR0127
 U 1 1 61657558
@@ -910,8 +906,6 @@ F 3 "~" H 1300 5350 50  0001 C CNN
 	1    1150 5400
 	1    0    0    -1  
 $EndComp
-Text Label 1450 5200 0    50   ~ 0
-SW7
 Text Label 1450 5400 0    50   ~ 0
 D+
 Text Label 1450 5500 0    50   ~ 0
@@ -1438,71 +1432,13 @@ Wire Wire Line
 Wire Wire Line
 	3050 4000 3250 4000
 Text Label 3250 4000 0    50   ~ 0
-SW7
-Wire Wire Line
-	1950 6050 2150 6050
-Wire Wire Line
-	2150 6050 2150 6300
-Connection ~ 1950 6050
-Text Label 3200 6300 0    50   ~ 0
-SW7STEP3V3
-Text Notes 850  6950 0    50   ~ 0
-5V VCC for 5V USB logic level, 3V3 VCCIO for 3V3 UART output
+SW10
 Wire Notes Line
 	850  3900 850  6950
 Wire Notes Line
 	850  6950 3700 6950
 Wire Notes Line
 	3700 3900 3700 6950
-$Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U4
-U 1 1 61636412
-P 2450 6300
-F 0 "U4" H 2450 6542 50  0000 C CNN
-F 1 "LD1117S33TR_SOT223" H 2450 6451 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2450 6500 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 2550 6050 50  0001 C CNN
-	1    2450 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 6650 2450 6650
-Wire Wire Line
-	2450 6600 2450 6650
-Connection ~ 2450 6650
-$Comp
-L Device:C C10
-U 1 1 616D4D0F
-P 3200 6450
-F 0 "C10" H 3315 6496 50  0000 L CNN
-F 1 "0.1uF" H 3315 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3238 6300 50  0001 C CNN
-F 3 "~" H 3200 6450 50  0001 C CNN
-	1    3200 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 616D4D15
-P 2750 6450
-F 0 "C9" H 2865 6496 50  0000 L CNN
-F 1 "4.7uF" H 2865 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2788 6300 50  0001 C CNN
-F 3 "~" H 2750 6450 50  0001 C CNN
-	1    2750 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 6650 3200 6600
-Wire Wire Line
-	2450 6650 2750 6650
-Wire Wire Line
-	2750 6600 2750 6650
-Connection ~ 2750 6650
-Wire Wire Line
-	2750 6650 3200 6650
-Wire Wire Line
-	2750 6300 3200 6300
 $Comp
 L Device:LED D9
 U 1 1 616F60B4
@@ -1621,4 +1557,12 @@ $EndComp
 Connection ~ 10150 2350
 Wire Wire Line
 	10150 2350 10350 2350
+Wire Wire Line
+	2950 4000 3050 4000
+Connection ~ 2950 4000
+Connection ~ 3050 4000
+Text Label 1250 6000 1    50   ~ 0
+SW10
+Text Label 1450 5200 0    50   ~ 0
+SW10
 $EndSCHEMATC
