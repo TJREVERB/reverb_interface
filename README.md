@@ -16,3 +16,7 @@ The first is similar to the original design, and uses a USB to UART converter.
 
 The second is new, and uses an SPI to UART converter so that we can send data through the main Pi 
 header instead of pogo pins or USB pads.
+
+All branches include connections to bitbang uart instead of using the converter.
+
+v1.2 fabricated first, received 10/24/21
