@@ -815,10 +815,6 @@ Text Label 6100 1850 0    50   ~ 0
 SPIMISO
 Text Label 6100 1950 0    50   ~ 0
 SPIMOSI
-Text Label 5100 1650 2    50   ~ 0
-SPICE1
-Text Label 5100 1750 2    50   ~ 0
-SPICE0
 $Comp
 L Interface_USB:CY7C65213-28PVXI U3
 U 1 1 61646441
@@ -1567,4 +1563,8 @@ Text Label 1450 5200 0    50   ~ 0
 SW10
 Text Notes 500  7050 0    50   ~ 0
 Do not connect USB while the EPS is connected so that back voltage isn't sent to the EPS
+Text Label 5100 2050 2    50   ~ 0
+USBUARTRX
+Text Label 5100 2150 2    50   ~ 0
+USBUARTTX
 $EndSCHEMATC

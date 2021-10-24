@@ -1596,4 +1596,8 @@ F 3 "" H 3600 6000 50  0001 C CNN
 	1    3600 6000
 	1    0    0    -1  
 $EndComp
+Text Label 5100 2050 2    50   ~ 0
+SPIUARTRX
+Text Label 5100 2150 2    50   ~ 0
+SPIUARTTX
 $EndSCHEMATC
