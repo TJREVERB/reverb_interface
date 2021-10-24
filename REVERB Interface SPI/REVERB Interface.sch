@@ -1462,14 +1462,6 @@ Wire Notes Line
 	850  3900 4000 3900
 Wire Notes Line
 	4000 6850 850  6850
-Text Label 3250 5850 0    50   ~ 0
-CTS
-Text Label 3250 5750 0    50   ~ 0
-RTS
-Text Label 6100 2250 0    50   ~ 0
-CTS
-Text Label 6100 2150 0    50   ~ 0
-RTS
 $Comp
 L Device:LED D9
 U 1 1 6164D690
@@ -1585,4 +1577,23 @@ SW9
 Wire Wire Line
 	10200 3350 10750 3350
 Connection ~ 10200 3350
+Text Label 3250 5750 0    50   ~ 0
+RTS
+Text Label 3250 5850 0    50   ~ 0
+CTS
+Wire Wire Line
+	3250 5850 3600 5850
+Wire Wire Line
+	3600 5850 3600 6000
+$Comp
+L power:GND #PWR?
+U 1 1 61769C75
+P 3600 6000
+F 0 "#PWR?" H 3600 5750 50  0001 C CNN
+F 1 "GND" H 3605 5827 50  0000 C CNN
+F 2 "" H 3600 6000 50  0001 C CNN
+F 3 "" H 3600 6000 50  0001 C CNN
+	1    3600 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
