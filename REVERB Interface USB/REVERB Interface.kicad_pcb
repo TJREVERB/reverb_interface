@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 66)
+    (drawings 72)
     (tracks 476)
     (zones 0)
     (modules 61)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
@@ -2549,6 +2549,24 @@
     )
   )
 
+  (gr_text SW6 (at 113.284 82.296) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text SW9 (at 160.782 72.136 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text SW10 (at 136.652 71.882 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text SW8 (at 131.572 72.136 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text SW4 (at 126.238 72.136 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text SW3 (at 119.126 72.136 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text v1.3 (at 195.58 132.715 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
