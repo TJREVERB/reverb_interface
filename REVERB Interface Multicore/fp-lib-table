@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "REVERB Interface")(type KiCad)(uri "${KIPRJMOD}/REVERB Interface.pretty")(options "")(descr ""))
+)
