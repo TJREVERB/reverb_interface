@@ -15,6 +15,13 @@
 #define SCKPORT 3
 #define CSPORT 4
 
+/* Protocol:
+ * CS falling edge marks begin transmission, CS rising edge marks end
+ * Each transmission contains a certain number of bytes
+ * In UART repeater mode, all bytes are echo'd to Serial and then the result is read into the output buffer
+ * In I2C delay mode, first byte signifies delay in 0.01s increments, second byte indicates target address, and the third byte and beyond will be echo'd to the I2C device
+ * If the transmisison starts with the switchmode byte, it will assume a mode switch is requested and switch mode to the second byte.
+ */
 byte mode = 1; //device mode: 1 uart repeater, 2 i2c delay. default to uart repeater, switch modes upon recieving specified byte:
 byte switchmode = 0x0a; //\n
 volatile byte inbuf [100]; //input buffer
@@ -38,9 +45,10 @@ void setup() {
 }
 
 void readData(){
+  inbuf[bytepos] = 0;
   inbuf[bytepos] |= ((SPIIN >> MOSIPORT) & 1) << pos; //set next input bit
-  //SPIOUT |= ((outbuf[bytepos] >> pos) & 1 << MISOPORT); //set output to next output bit
-  //SPIOUT &= ~((outbuf[bytepos] >> pos) & 1 << MISOPORT);
+  SPIOUT |= ((outbuf[bytepos] >> pos) & 1 << MISOPORT); //set output to next output bit
+  SPIOUT &= ~((outbuf[bytepos] >> pos) & 1 << MISOPORT);
   pos++;
 }
 
@@ -72,7 +80,7 @@ void loop() {
       }
       bytepos = 0;
 
-      int txln = Serial.available();
+      byte txln = Serial.available();
       for (int i = 0; i < txln; i++){
         outbuf[i] = Serial.read();
       }
@@ -85,7 +93,7 @@ void loop() {
       Wire.endTransmission();
       byteos = 0;
 
-      int txln = 0;
+      byte txln = 0;
       while (Wire.available()){
         outbuf[i] = Wire.read();
         txln ++;
