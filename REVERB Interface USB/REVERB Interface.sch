@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TJ REVERB Interface Board"
 Date "2021-10-03"
-Rev "1.3"
+Rev "1.5"
 Comp "TJ Nanosat Club"
 Comment1 "Redesign from previous Eagle designs"
 Comment2 ""
@@ -1128,24 +1128,24 @@ Wire Notes Line
 	3400 3900 3400 6950
 Wire Notes Line
 	6600 6950 6600 3900
-Text Label 9500 4850 3    50   ~ 0
+Text Label 9650 4850 3    50   ~ 0
 SW9
 Wire Wire Line
-	9700 4850 9700 5050
+	9850 4850 9850 5050
 $Comp
 L power:GND #PWR0129
 U 1 1 617E7DA1
-P 9700 5050
-F 0 "#PWR0129" H 9700 4800 50  0001 C CNN
-F 1 "GND" H 9705 4877 50  0000 C CNN
-F 2 "" H 9700 5050 50  0001 C CNN
-F 3 "" H 9700 5050 50  0001 C CNN
-	1    9700 5050
+P 9850 5050
+F 0 "#PWR0129" H 9850 4800 50  0001 C CNN
+F 1 "GND" H 9855 4877 50  0000 C CNN
+F 2 "" H 9850 5050 50  0001 C CNN
+F 3 "" H 9850 5050 50  0001 C CNN
+	1    9850 5050
 	1    0    0    -1  
 $EndComp
-Text Label 9800 4850 3    50   ~ 0
+Text Label 10050 4850 3    50   ~ 0
 EPSSCL
-Text Label 9900 4850 3    50   ~ 0
+Text Label 9950 4850 3    50   ~ 0
 EPSSDA
 Text Notes 9400 4000 0    50   ~ 0
 IMU
@@ -1978,9 +1978,13 @@ U 1 1 618A3C53
 P 9900 4450
 F 0 "U1" H 10378 4363 50  0000 L CNN
 F 1 "IMU" H 10378 4272 50  0000 L CNN
-F 2 "REVERB Interface:LSM9DS1-BNO055" H 9900 4450 50  0001 C CNN
+F 2 "REVERB Interface:BNO055" H 9900 4450 50  0001 C CNN
 F 3 "" H 9900 4450 50  0001 C CNN
 	1    9900 4450
 	1    0    0    -1  
 $EndComp
+Text Label 10150 4850 3    50   ~ 0
+IMURST
+Text Label 4550 1250 2    50   ~ 0
+IMURST
 $EndSCHEMATC
