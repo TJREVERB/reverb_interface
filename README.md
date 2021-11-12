@@ -25,3 +25,5 @@ v1.2 fabricated first, received 10/24/21
 v1.3 adds major corrections for circuitry
 
 v1.4 introduces the new multicore branch
+
+v1.5 replaces LSM9DS1 IMU with BNO055
