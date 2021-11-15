@@ -19,7 +19,7 @@
  * CS falling edge marks begin transmission, CS rising edge marks end
  * Each transmission contains a certain number of bytes
  * In UART repeater mode, all bytes are echo'd to Serial and then the result is read into the output buffer
- * In I2C delay mode, first byte signifies delay in 0.01s increments, second byte indicates target address, and the third byte and beyond will be echo'd to the I2C device
+ * In I2C delay mode, first byte signifies delay in 0.1s increments, second byte indicates target address, and the third byte and beyond will be echo'd to the I2C device
  * If the transmisison starts with the switchmode byte, it will assume a mode switch is requested and switch mode to the second byte.
  */
 byte mode = 1; //device mode: 1 uart repeater, 2 i2c delay. default to uart repeater, switch modes upon recieving specified byte:
@@ -85,7 +85,7 @@ void loop() {
         outbuf[i] = Serial.read();
       }
     } else if (mode == 2){ //I2C repeater mode: syntax: 1st byte delay in increments of 0.01s, 2nd byte device address, 3rd byte and beyond data, reads result and returns
-      delay(10*inbuf[0]);
+      delay(100*inbuf[0]);
       Wire.beginTransmission(inbuf[1]);
       for (int i = 2; i < bytepos + 1; i++){
         Wire.write(inbuf[i]);
