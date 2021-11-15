@@ -801,11 +801,9 @@ NoConn ~ 8500 4300
 NoConn ~ 8500 4400
 NoConn ~ 8500 4500
 NoConn ~ 8500 4600
-NoConn ~ 8500 4700
 NoConn ~ 8500 4800
 NoConn ~ 8500 4900
 NoConn ~ 8500 5000
-NoConn ~ 9000 4300
 NoConn ~ 9000 4600
 NoConn ~ 9000 4700
 NoConn ~ 9000 5000
@@ -1987,4 +1985,13 @@ Text Label 10150 4850 3    50   ~ 0
 IMURST
 Text Label 4550 1250 2    50   ~ 0
 IMURST
+Text Label 8500 4700 2    50   ~ 0
+RI
+Text Label 4550 2250 2    50   ~ 0
+RI
+Wire Wire Line
+	9250 4800 9250 4300
+Wire Wire Line
+	9250 4300 9000 4300
+Connection ~ 9250 4800
 $EndSCHEMATC
