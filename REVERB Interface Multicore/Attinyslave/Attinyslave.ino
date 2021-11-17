@@ -23,13 +23,13 @@
  * If the transmisison starts with the switchmode byte, it will assume a mode switch is requested and switch mode to the second byte.
  */
 byte mode = 1; //device mode: 1 uart repeater, 2 i2c delay. default to uart repeater, switch modes upon recieving specified byte:
-byte switchmode = 0x0a; //\n
+byte switchbyte = 0x0a; //\n
 volatile byte inbuf [100]; //input buffer
 volatile byte outbuf [100]; //output buffer
 //volatile byte inbuf; //input buffer byte
 //volatile byte outbuf = 255; //output buffer byte
 volatile byte pos;
-volatile byte bytepos
+volatile byte bytepos;
 boolean reading = 0;
 
 void setup() {
@@ -95,7 +95,7 @@ void loop() {
 
       byte txln = 0;
       while (Wire.available()){
-        outbuf[i] = Wire.read();
+        outbuf[txln] = Wire.read();
         txln ++;
       }
     }
