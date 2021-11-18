@@ -1835,10 +1835,6 @@ Wire Wire Line
 Wire Wire Line
 	9550 4500 9300 4500
 Connection ~ 9550 5000
-Text Label 8800 4900 2    50   ~ 0
-RI
-Text Label 4600 2200 2    50   ~ 0
-RI
 $Comp
 L Device:C C21
 U 1 1 61971DD0
@@ -1973,4 +1969,5 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/DS3232M.pdf" H 6170 7650 50  00
 	1    5900 7500
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8800 4900
 $EndSCHEMATC

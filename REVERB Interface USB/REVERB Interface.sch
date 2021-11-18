@@ -1685,10 +1685,6 @@ Text Label 10150 4850 3    50   ~ 0
 IMURST
 Text Label 4550 1250 2    50   ~ 0
 IMURST
-Text Label 8500 4700 2    50   ~ 0
-RI
-Text Label 4550 2250 2    50   ~ 0
-RI
 Wire Wire Line
 	9250 4800 9250 4300
 Wire Wire Line
@@ -2035,4 +2031,5 @@ F 3 "~" V 4350 7760 50  0001 C CNN
 	1    4350 7700
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8500 4700
 $EndSCHEMATC
