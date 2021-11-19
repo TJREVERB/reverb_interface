@@ -518,9 +518,9 @@ F 3 "~" H 4600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4800 3200 0    50   ~ 0
-D+
+PID+
 Text Label 4800 3300 0    50   ~ 0
-D-
+PID-
 $Comp
 L Interface_UART:MAX3232 U2
 U 1 1 615C8750
@@ -1251,9 +1251,9 @@ F 3 "~" H 5100 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5300 3200 0    50   ~ 0
-D+
+PID+
 Text Label 5300 3300 0    50   ~ 0
-D-
+PID-
 $Comp
 L Mechanical:MountingHole M5
 U 1 1 61640E3F
@@ -2032,4 +2032,47 @@ F 3 "~" V 4350 7760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8500 4700
+$Comp
+L Connector:Conn_01x04_Male J9
+U 1 1 619777A4
+P 4200 3600
+F 0 "J9" H 4308 3881 50  0000 C CNN
+F 1 "USB SWITCH" H 4308 3790 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 4200 3600 50  0001 C CNN
+F 3 "~" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	1    0    0    -1  
+$EndComp
+Text Label 4400 3600 0    50   ~ 0
+PID+
+Text Label 4400 3500 0    50   ~ 0
+PID-
+Text Label 4400 3800 0    50   ~ 0
+D+
+Text Label 4400 3700 0    50   ~ 0
+D-
+$Comp
+L Connector:Conn_01x02_Male J10
+U 1 1 61984053
+P 4850 3550
+F 0 "J10" H 4958 3731 50  0000 C CNN
+F 1 "USBPWR" H 4958 3640 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 4850 3550 50  0001 C CNN
+F 3 "~" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+Text Label 5050 3550 0    50   ~ 0
+5VUSBCHG
+$Comp
+L power:GND #PWR0136
+U 1 1 6198E211
+P 5050 3650
+F 0 "#PWR0136" H 5050 3400 50  0001 C CNN
+F 1 "GND" H 5055 3477 50  0000 C CNN
+F 2 "" H 5050 3650 50  0001 C CNN
+F 3 "" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

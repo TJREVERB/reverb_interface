@@ -1970,4 +1970,28 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/DS3232M.pdf" H 6170 7650 50  00
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8800 4900
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 61975C7D
+P 6350 3100
+F 0 "J6" H 6458 3281 50  0000 C CNN
+F 1 "USBPWR" H 6458 3190 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6350 3100 50  0001 C CNN
+F 3 "~" H 6350 3100 50  0001 C CNN
+	1    6350 3100
+	1    0    0    -1  
+$EndComp
+Text Label 6550 3100 0    50   ~ 0
+5VUSBCHG
+$Comp
+L power:GND #PWR0143
+U 1 1 6198130C
+P 6550 3200
+F 0 "#PWR0143" H 6550 2950 50  0001 C CNN
+F 1 "GND" H 6555 3027 50  0000 C CNN
+F 2 "" H 6550 3200 50  0001 C CNN
+F 3 "" H 6550 3200 50  0001 C CNN
+	1    6550 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
