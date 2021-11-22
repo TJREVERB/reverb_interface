@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TJ REVERB Interface Board"
 Date "2021-10-03"
-Rev "1.5"
+Rev "1.6"
 Comp "TJ Nanosat Club"
 Comment1 "Redesign from previous Eagle designs"
 Comment2 ""
@@ -922,67 +922,6 @@ F 3 "" H 1100 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 4700 1300 4700
-Wire Wire Line
-	2100 4800 1700 4800
-$Comp
-L Device:LED D1
-U 1 1 61680797
-P 1700 4450
-F 0 "D1" V 1739 4332 50  0000 R CNN
-F 1 "RED" V 1648 4332 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 4450 50  0001 C CNN
-F 3 "~" H 1700 4450 50  0001 C CNN
-	1    1700 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 61681979
-P 1300 4450
-F 0 "D2" V 1339 4332 50  0000 R CNN
-F 1 "GREEN" V 1248 4332 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1300 4450 50  0001 C CNN
-F 3 "~" H 1300 4450 50  0001 C CNN
-	1    1300 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 61683EE4
-P 1700 4150
-F 0 "R1" V 1600 4100 50  0000 L CNN
-F 1 "1K" V 1700 4100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 4150 50  0001 C CNN
-F 3 "~" H 1700 4150 50  0001 C CNN
-	1    1700 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 6168462F
-P 1300 4150
-F 0 "R2" V 1200 4100 50  0000 L CNN
-F 1 "1K" V 1300 4100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1230 4150 50  0001 C CNN
-F 3 "~" H 1300 4150 50  0001 C CNN
-	1    1300 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 4000 1700 4000
-Connection ~ 1700 4000
-Wire Wire Line
-	1700 4600 1700 4800
-Connection ~ 1700 4800
-Wire Wire Line
-	1700 4800 1200 4800
-Wire Wire Line
-	1300 4600 1300 4700
-Connection ~ 1300 4700
-Wire Wire Line
-	1300 4700 1200 4700
-Wire Wire Line
 	2600 4300 2600 4000
 $Comp
 L Device:LED D3
@@ -1048,72 +987,10 @@ Wire Wire Line
 	3800 6700 4100 6700
 Wire Wire Line
 	3550 6100 4100 6100
-$Comp
-L Device:LED D5
-U 1 1 616CB109
-P 4200 5250
-F 0 "D5" V 4250 5200 50  0000 R CNN
-F 1 "RED" V 4150 5200 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 5250 50  0001 C CNN
-F 3 "~" H 4200 5250 50  0001 C CNN
-	1    4200 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 616CB10F
-P 4200 4950
-F 0 "R5" V 4100 4900 50  0000 L CNN
-F 1 "1K" V 4200 4900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4130 4950 50  0001 C CNN
-F 3 "~" H 4200 4950 50  0001 C CNN
-	1    4200 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 616D0A78
-P 3850 4950
-F 0 "R6" V 3750 4900 50  0000 L CNN
-F 1 "1K" V 3850 4900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3780 4950 50  0001 C CNN
-F 3 "~" H 3850 4950 50  0001 C CNN
-	1    3850 4950
-	1    0    0    -1  
-$EndComp
-Text Label 4050 4800 2    50   ~ 0
-SW8
-$Comp
-L Device:LED D6
-U 1 1 616D0A72
-P 3850 5250
-F 0 "D6" V 3900 5200 50  0000 R CNN
-F 1 "GREEN" V 3800 5200 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 5250 50  0001 C CNN
-F 3 "~" H 3850 5250 50  0001 C CNN
-	1    3850 5250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4400 5450 4200 5450
-Wire Wire Line
-	3700 5850 3850 5850
-Wire Wire Line
-	3850 4800 4200 4800
 Wire Wire Line
 	6000 5450 6300 5450
 Wire Wire Line
 	6000 5850 6300 5850
-Wire Wire Line
-	4200 5400 4200 5450
-Connection ~ 4200 5450
-Wire Wire Line
-	4200 5450 3700 5450
-Wire Wire Line
-	3850 5400 3850 5850
-Connection ~ 3850 5850
-Wire Wire Line
-	3850 5850 4400 5850
 Text Notes 550  4900 0    50   ~ 0
 Micro B for programming
 Text Notes 500  4000 0    50   ~ 0
@@ -1409,8 +1286,6 @@ F 3 "" H 8650 1250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1700 4000 2600 4000
-Wire Wire Line
 	2700 4300 2700 4000
 Wire Wire Line
 	2700 4000 2900 4000
@@ -1542,7 +1417,6 @@ Wire Wire Line
 	8000 2250 8200 2250
 Wire Wire Line
 	2600 4000 2700 4000
-Connection ~ 2600 4000
 Connection ~ 2700 4000
 Text Label 900  6000 1    50   ~ 0
 SW10
@@ -2075,4 +1949,12 @@ F 3 "" H 5050 3650 50  0001 C CNN
 	1    5050 3650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1200 4800 2100 4800
+Wire Wire Line
+	1200 4700 2100 4700
+Wire Wire Line
+	3700 5450 4400 5450
+Wire Wire Line
+	3700 5850 4400 5850
 $EndSCHEMATC

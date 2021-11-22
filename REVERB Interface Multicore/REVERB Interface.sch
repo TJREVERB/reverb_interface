@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TJ REVERB Interface Board"
 Date "2021-10-03"
-Rev "1.5"
+Rev "1.6"
 Comp "TJ Nanosat Club"
 Comment1 "Redesign from previous Eagle designs"
 Comment2 ""
@@ -788,28 +788,6 @@ SPICE1
 Text Label 4600 1600 2    50   ~ 0
 SPICE0
 $Comp
-L Device:LED D2
-U 1 1 61681979
-P 1150 5700
-F 0 "D2" V 1200 5850 50  0000 R CNN
-F 1 "GREEN" V 1100 6000 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1150 5700 50  0001 C CNN
-F 3 "~" H 1150 5700 50  0001 C CNN
-	1    1150 5700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 6168462F
-P 1150 5400
-F 0 "R2" V 1050 5350 50  0000 L CNN
-F 1 "1K" V 1150 5350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1080 5400 50  0001 C CNN
-F 3 "~" H 1150 5400 50  0001 C CNN
-	1    1150 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D3
 U 1 1 6169D0A8
 P 1300 4350
@@ -862,72 +840,10 @@ Wire Wire Line
 	4100 6450 4400 6450
 Wire Wire Line
 	3850 5850 4400 5850
-$Comp
-L Device:LED D5
-U 1 1 616CB109
-P 4500 5000
-F 0 "D5" V 4550 4950 50  0000 R CNN
-F 1 "RED" V 4450 4950 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 5000 50  0001 C CNN
-F 3 "~" H 4500 5000 50  0001 C CNN
-	1    4500 5000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 616CB10F
-P 4500 4700
-F 0 "R5" V 4400 4650 50  0000 L CNN
-F 1 "1K" V 4500 4650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4430 4700 50  0001 C CNN
-F 3 "~" H 4500 4700 50  0001 C CNN
-	1    4500 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 616D0A78
-P 4150 4700
-F 0 "R6" V 4050 4650 50  0000 L CNN
-F 1 "1K" V 4150 4650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4080 4700 50  0001 C CNN
-F 3 "~" H 4150 4700 50  0001 C CNN
-	1    4150 4700
-	1    0    0    -1  
-$EndComp
-Text Label 4350 4550 2    50   ~ 0
-SW8
-$Comp
-L Device:LED D6
-U 1 1 616D0A72
-P 4150 5000
-F 0 "D6" V 4200 4950 50  0000 R CNN
-F 1 "GREEN" V 4100 4950 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 5000 50  0001 C CNN
-F 3 "~" H 4150 5000 50  0001 C CNN
-	1    4150 5000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4700 5200 4500 5200
-Wire Wire Line
-	4000 5600 4150 5600
-Wire Wire Line
-	4150 4550 4500 4550
 Wire Wire Line
 	6300 5200 6600 5200
 Wire Wire Line
 	6300 5600 6600 5600
-Wire Wire Line
-	4500 5150 4500 5200
-Connection ~ 4500 5200
-Wire Wire Line
-	4500 5200 4000 5200
-Wire Wire Line
-	4150 5150 4150 5600
-Connection ~ 4150 5600
-Wire Wire Line
-	4150 5600 4700 5600
 Text Notes 500  3750 0    50   ~ 0
 Secondary uC
 Wire Notes Line
@@ -1215,8 +1131,6 @@ Text Label 3100 4850 0    50   ~ 0
 SPIMOSI
 Text Label 3100 5150 0    50   ~ 0
 SPICE0
-Text Label 1150 5850 3    50   ~ 0
-SPIUARTRX
 Wire Notes Line
 	500  3650 3650 3650
 Wire Notes Line
@@ -1537,34 +1451,6 @@ F 3 "~" H 700 4950 50  0001 C CNN
 	1    700  4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 61683EE4
-P 1500 5400
-F 0 "R1" V 1400 5350 50  0000 L CNN
-F 1 "1K" V 1500 5350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1430 5400 50  0001 C CNN
-F 3 "~" H 1500 5400 50  0001 C CNN
-	1    1500 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 61680797
-P 1500 5700
-F 0 "D1" V 1550 5650 50  0000 R CNN
-F 1 "RED" V 1450 5650 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1500 5700 50  0001 C CNN
-F 3 "~" H 1500 5700 50  0001 C CNN
-	1    1500 5700
-	0    -1   -1   0   
-$EndComp
-Text Label 1500 5850 3    50   ~ 0
-SPIUARTTX
-Wire Wire Line
-	1150 5250 1500 5250
-Text Label 1250 5250 0    50   ~ 0
-SW10
 Text Label 3100 4750 0    50   ~ 0
 SLVRST
 Text Label 1200 4850 0    50   ~ 0
@@ -1994,4 +1880,8 @@ F 3 "" H 6550 3200 50  0001 C CNN
 	1    6550 3200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4000 5200 4700 5200
+Wire Wire Line
+	4000 5600 4700 5600
 $EndSCHEMATC
