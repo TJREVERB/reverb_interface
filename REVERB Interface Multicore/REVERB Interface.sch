@@ -1743,9 +1743,9 @@ F 3 "~" H 6750 7200 50  0001 C CNN
 	1    6750 7200
 	1    0    0    -1  
 $EndComp
-Text Label 5400 7300 2    50   ~ 0
+Text Label 3950 7300 0    50   ~ 0
 EPSSCL
-Text Label 5400 7400 2    50   ~ 0
+Text Label 3000 7300 0    50   ~ 0
 EPSSDA
 $Comp
 L Device:CP C11
@@ -1884,4 +1884,114 @@ Wire Wire Line
 	4000 5200 4700 5200
 Wire Wire Line
 	4000 5600 4700 5600
+$Comp
+L power:+3.3VA #PWR010
+U 1 1 61A144F2
+P 5600 2700
+F 0 "#PWR010" H 5600 2550 50  0001 C CNN
+F 1 "+3.3VA" V 5615 2828 50  0000 L CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VA #PWR09
+U 1 1 61A1537F
+P 5600 1900
+F 0 "#PWR09" H 5600 1750 50  0001 C CNN
+F 1 "+3.3VA" V 5615 2028 50  0000 L CNN
+F 2 "" H 5600 1900 50  0001 C CNN
+F 3 "" H 5600 1900 50  0001 C CNN
+	1    5600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VA #PWR05
+U 1 1 61A1C1E9
+P 5100 500
+F 0 "#PWR05" H 5100 350 50  0001 C CNN
+F 1 "+3.3VA" V 5115 628 50  0000 L CNN
+F 2 "" H 5100 500 50  0001 C CNN
+F 3 "" H 5100 500 50  0001 C CNN
+	1    5100 500 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61A20648
+P 5850 850
+F 0 "R2" H 5900 850 50  0000 L CNN
+F 1 "2.2K" V 5850 750 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5780 850 50  0001 C CNN
+F 3 "~" H 5850 850 50  0001 C CNN
+	1    5850 850 
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1400 0    50   ~ 0
+SDA0
+Text Label 4600 1400 2    50   ~ 0
+SCL0
+Wire Wire Line
+	5600 1400 5850 1400
+Wire Wire Line
+	5850 1400 5850 1000
+$Comp
+L Device:R R1
+U 1 1 61A29CEA
+P 4300 850
+F 0 "R1" H 4350 850 50  0000 L CNN
+F 1 "2.2K" V 4300 750 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4230 850 50  0001 C CNN
+F 3 "~" H 4300 850 50  0001 C CNN
+	1    4300 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 700  5850 500 
+Wire Wire Line
+	5850 500  5100 500 
+Wire Wire Line
+	5100 500  4300 500 
+Wire Wire Line
+	4300 500  4300 700 
+Connection ~ 5100 500 
+Wire Wire Line
+	4300 1000 4300 1400
+Wire Wire Line
+	4300 1400 4600 1400
+$Comp
+L Jumper:SolderJumper_3_Open JP6
+U 1 1 61A39415
+P 3750 7300
+F 0 "JP6" H 3750 7505 50  0000 C CNN
+F 1 "RTCSCL" H 3750 7414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 3750 7300 50  0001 C CNN
+F 3 "~" H 3750 7300 50  0001 C CNN
+	1    3750 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP5
+U 1 1 61A3B0DA
+P 2800 7300
+F 0 "JP5" H 2800 7505 50  0000 C CNN
+F 1 "RTCSDA" H 2800 7414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2800 7300 50  0001 C CNN
+F 3 "~" H 2800 7300 50  0001 C CNN
+	1    2800 7300
+	1    0    0    -1  
+$EndComp
+Text Label 5400 7300 2    50   ~ 0
+RTCSCL
+Text Label 5400 7400 2    50   ~ 0
+RTCSDA
+Text Label 3750 7450 3    50   ~ 0
+RTCSCL
+Text Label 2800 7450 3    50   ~ 0
+RTCSDA
+Text Label 3550 7300 2    50   ~ 0
+SCL0
+Text Label 2600 7300 2    50   ~ 0
+SDA0
 $EndSCHEMATC
