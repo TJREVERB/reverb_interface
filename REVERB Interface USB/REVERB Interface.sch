@@ -906,21 +906,8 @@ Text Notes 6700 3750 0    50   ~ 0
 UART selection Jumpers
 Text Notes 6700 5600 0    50   ~ 0
 Option 1: Hardware APRS, two converters to Iridium: \nJP1 and JP2 bridge pins 2 and 3, JP3 and JP4 bridge pins 1 and 2\nOption 2: USB UART APRS, MAX3232 Iridium:\nJP1 and JP2 bridge pins 1 and 2, JP3 and JP4 bridge pins 2 and 3\nDO NOT BRIDGE THE SAME TWO PINS FOR BOTH PAIRS OF JUMPERS
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 61634D7E
-P 6200 1850
-F 0 "J8" H 6308 2031 50  0000 C CNN
-F 1 "USBPOGO" H 6308 1940 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6200 1850 50  0001 C CNN
-F 3 "~" H 6200 1850 50  0001 C CNN
-	1    6200 1850
-	1    0    0    -1  
-$EndComp
-Text Label 6400 1850 0    50   ~ 0
+Text Label 6750 1850 2    50   ~ 0
 PID+
-Text Label 6400 1950 0    50   ~ 0
-PID-
 $Comp
 L Mechanical:MountingHole M5
 U 1 1 61640E3F
@@ -1821,21 +1808,13 @@ Wire Wire Line
 Wire Wire Line
 	2850 2400 2250 2400
 Wire Wire Line
-	6400 1850 6600 1850
-Wire Wire Line
-	6400 1950 6700 1950
-Wire Wire Line
 	6750 2200 6700 2200
 Wire Wire Line
 	6700 2200 6700 1950
-Connection ~ 6700 1950
 Wire Wire Line
 	6700 1950 6750 1950
 Wire Wire Line
-	6600 1850 6600 2300
-Wire Wire Line
 	6600 2300 6750 2300
-Connection ~ 6600 1850
 Wire Wire Line
 	6600 1850 6750 1850
 Wire Wire Line
@@ -2227,4 +2206,8 @@ Wire Wire Line
 	9650 2650 9950 2650
 Wire Wire Line
 	9650 2850 9950 2850
+Wire Wire Line
+	6600 1850 6600 2300
+Text Label 6750 1950 2    50   ~ 0
+PID-
 $EndSCHEMATC
