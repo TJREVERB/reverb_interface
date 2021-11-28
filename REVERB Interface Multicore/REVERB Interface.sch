@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TJ REVERB Interface Board"
 Date "2021-10-03"
-Rev "1.6"
+Rev "2.0"
 Comp "TJ Nanosat Club"
 Comment1 "Redesign from previous Eagle designs"
 Comment2 ""
