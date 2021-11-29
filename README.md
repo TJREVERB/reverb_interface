@@ -11,7 +11,7 @@ The first is similar to the original design, and uses a USB to UART converter.
 
 The second uses an SPI to UART converter so that we can send data through the main Pi header instead of pogo pins or USB pads. DEPRECATED DUE TO DIFFICULTY IN SOFTWARE IMPLEMENTATION
 
-The third uses an external AVR microcontroller as a secondary core, to be used for IO operations, specifically as an SPI to UART converter and an I2C buffer for sending delayed commands to the EPS (e.g. sending bus reset after a delay to give the pi enough time to exit script)
+The third uses an external AVR microcontroller as a secondary core, to be used for IO operations, specifically as an SPI/I2C to UART converter and an I2C buffer for sending delayed commands to the EPS (e.g. sending bus reset after a delay to give the pi enough time to exit script)
 
 All branches include connections to bitbang uart instead of using the converter.
 
@@ -27,3 +27,7 @@ v1.3 adds major corrections for circuitry
 v1.4 introduces the new multicore branch
 
 v1.5 replaces LSM9DS1 IMU with BNO055
+
+v1.6 adds RTC and battery
+
+v2.0 CAD compatibility check, fabbed as v2 on 11/28/21
