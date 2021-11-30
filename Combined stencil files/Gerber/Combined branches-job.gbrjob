@@ -7,20 +7,20 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-11-20T22:05:49-05:00"
+    "CreationDate":  "2021-11-28T20:19:45-05:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "uUSB male BOB",
-      "GUID": "75555342-206d-4616-9c65-20424f422e6b",
+      "Name": "Combined branches",
+      "GUID": "436f6d62-696e-4656-9420-6272616e6368",
       "Revision": "rev?"
     },
     "Size":
     {
-      "X": 19.354,
-      "Y": 14.782
+      "X": 181.152,
+      "Y": 95.935
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -32,7 +32,7 @@
       "PadToPad":  0.200,
       "PadToTrack":  0.200,
       "TrackToTrack":  0.200,
-      "MinLineWidth":  0.254,
+      "MinLineWidth":  0.381,
       "TrackToRegion":  0.508,
       "RegionToRegion":  0.508
     }
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "uUSB male BOB-F_Cu.gbr",
+      "Path":  "Combined branches-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-B_Cu.gbr",
+      "Path":  "Combined branches-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-F_Paste.gbr",
+      "Path":  "Combined branches-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-B_Paste.gbr",
+      "Path":  "Combined branches-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-F_SilkS.gbr",
+      "Path":  "Combined branches-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-B_SilkS.gbr",
+      "Path":  "Combined branches-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "uUSB male BOB-F_Mask.gbr",
+      "Path":  "Combined branches-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "uUSB male BOB-B_Mask.gbr",
+      "Path":  "Combined branches-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "uUSB male BOB-Edge_Cuts.gbr",
+      "Path":  "Combined branches-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
